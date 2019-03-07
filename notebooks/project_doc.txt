@@ -1,0 +1,46 @@
+
+Frame the problem and look at the big picture
+1. Define the objective in business terms.
+   Goal of this project is to forecast the sales price of a house, based on the household data. The house is not sold
+   for a too low price nor is the price too high, that the house will never be sold.
+2. How will your solution be used?
+   The solution could be implemented in an website, that everyone can estimate the best sales price for their property.
+3. What are the current solutions/workarounds (if any)?
+4. How should you frame this problem (supervised/unsupervised, online/offline, etc.)?
+   This is an superviced regression problem.
+5. How sould performance be measured?
+   The performance should be measured in R2.
+6. Is the performance measure aligned with the business objective?
+7. What would be the minimum performance needed to reach the business objective?
+8. What are comparable problems? Can you reuse experience or tools?
+9. Is human expertise available?
+10. How would you solve the problem manually?
+11. List the assumptions you (or others) have made so far.
+12. Verify assumptions if possible.
+
+
+Get the data
+Note: Automate as much as possible so you can easily get fresh data.
+1. List the data you need and how much you need.
+2. Find and document where you can get that data.
+3. Check how much space it will take.
+4. Check legal obligations, and get authorization if necessary.
+5. Get access authorizations.
+6. Create a workspace (with enough storage space).
+7. Get the data.
+8. Convert the data to a format you can easily manipulate (without changing
+9. Ensure sensitive information is deleted or protected (e.g., anonymized).
+10. Check the size and type of data (time series, sample, geographical, etc.).
+11. Sample a test set, put it aside, and never look at it (no data snooping!)
+
+
+Explore the data
+Note: try to get insights from a field expert for these steps.
+• Create a copy of the data for exploration (sampling it down to a manageable size if necessary).
+• Create a Jupyter notebook to keep a record of your data exploration.
+  See 01_HousePrice_VX.ipynb
+• For supervised learning tasks, identify the target attribute(s).
+  The target attribute: Index(['SalePrice'], dtype='object')
+• Study how you would solve the problem manually.
+• Identify extra data that would be useful.
+• Document what you have learned.
